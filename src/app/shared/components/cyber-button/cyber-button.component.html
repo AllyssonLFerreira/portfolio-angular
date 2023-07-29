@@ -1,0 +1,21 @@
+<ng-container *ngIf="path; else withoutRouter">
+    <button (click)="navigateBy(path)">
+      <a class="glitch-effect">
+        <span class="caption">// {{text}}</span>
+        <span class="underline-decoration">_</span>
+        <span class="arrow-decoration">&rArr;</span>
+      </a>
+    </button>
+</ng-container>
+
+<ng-template #withoutRouter>
+    <button>
+      <a class="glitch-effect">
+        <span class="caption">// {{text}}</span>
+        <span class="underline-decoration">_</span>
+        <span class="arrow-decoration">&rArr;</span>
+      </a>
+    </button>
+</ng-template>
+
+

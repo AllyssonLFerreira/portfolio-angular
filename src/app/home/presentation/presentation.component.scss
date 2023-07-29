@@ -1,0 +1,59 @@
+section { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--regular-dimension);
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  gap: var(--regular-dimension);
+}
+
+.presentation-table {
+    max-width: 60%;
+    max-height: 29.25rem;
+    margin-bottom: 2rem;
+}
+  
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0.5rem;
+      
+}
+  
+  @media (min-width: 706px) and (max-width: 857px) {
+    section {
+      width: 90%;
+      left: 5%;
+      max-height: 65%;
+    }
+  }
+  @media (min-width: 355px) and (max-width: 705px) {
+    section {
+      width: 90%;
+      max-height: 75vh;
+      position: fixed;
+      top: 5%;
+      left: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .text-section {
+        max-width: 90%;
+      }
+      .typewriter {
+        max-height: 36rem;
+      }
+      .presentation-table {
+        align-self: end;
+        max-width: 18rem;
+        max-height: 29.25rem;
+      }
+    }
+  }
+  

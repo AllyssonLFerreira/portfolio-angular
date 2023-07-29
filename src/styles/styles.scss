@@ -1,0 +1,56 @@
+@import './common.scss';
+@import './root.scss';
+@import './theme.scss';
+@import 'animations/retrowave.scss';
+@import 'animations/glitch.scss';
+@import 'animations/commons.scss';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html, body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -font-smoothing: antialiased;
+}
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    color: var(--contrast);
+    text-shadow: 0 0 5px var(--contrast-shadow);
+    font-family: var(--family);
+    font-size: var(--body-size);
+    font-weight: var(--body-weight);
+}
+
+a, i { 
+    cursor: pointer
+};
+
+h2 {
+    text-shadow: 0 0 5px var(--contrast-shadow);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+}
+
+.title {
+    text-shadow: 0 0 5px var(--contrast-shadow);
+}
+
+@supports (will-change: transform) {
+    .frame {
+        opacity: 0;
+        will-change: opacity, transform;
+        animation-duration: 3600ms;
+        animation-iteration-count: 1;
+        animation-name: fade-in;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+}
+  

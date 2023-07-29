@@ -1,0 +1,34 @@
+<ng-container *ngIf="state$ | async as content">
+    <section class="absolute-centralization frame">
+  
+      <div class="box __terminal">
+          <h2 class="caption">//target_ briefing_&rArr;</h2>
+          <ng-container>
+              <p *ngFor="let data of content.presentation.textBox"> &rArr; {{data.text}} </p>
+          </ng-container>
+          <nav>
+              <app-cyber-button text="Download _CV" 
+                                (click)="downloadPDF()"
+              />
+          </nav>
+        </div>
+        
+        <div class="frame terminal-box">
+          <app-info-card />
+        </div>
+      
+      <!-- <ng-container *ngFor="let table of content.presentation.table">
+        <div class="presentation-table">
+          <app-table  img="{{table.img}}"
+                      [tableData]="table.tr"/>
+        </div>
+      </ng-container> -->
+      
+      <app-cyber-button text="_SKILLS" 
+                        routerLink="skills"
+      />
+    </section>
+
+  
+  </ng-container>
+  

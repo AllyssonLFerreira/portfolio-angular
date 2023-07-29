@@ -1,0 +1,62 @@
+section {
+    font-size: var(--subtitle-size);
+    display: grid;
+}
+
+.terminal {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.sys-rec {
+    padding: 5rem;      
+    grid-row: 2/2;
+    grid-column: 2/2; 
+    p {
+        letter-spacing: 0.25rem;
+    }
+}
+
+.sys-rec_reboot_success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    gap: 1rem;
+}
+
+.sys-rec_rebooting { line-height: 1.75rem }
+            
+.hidden { display: none };
+
+.glitch { animation: glitch 1.5s linear infinite };
+
+.glitch--clone { opacity: 0.2 };
+
+.glitch--top { animation: glitch-top 1s linear infinite };
+
+.glitch--top .sys-rec { transform: translate(6vw, 6vw) };
+
+.glitch--bottom .sys-rec { transform: translate(-6vw, -6vw) };
+
+.glitch--bottom { animation: glitch-bottom 0.75s linear infinite };
+
+.glitch--clone .sys-rec {
+    filter: blur(2px);
+    opacity: 0.7;
+}
+
+@media (min-width: 356px) and (max-width: 602px) {
+    .sys-rec {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .glitch--top .sys-rec { transform: translate(18vw, 26vw) };
+
+    .glitch--bottom .sys-rec { transform: translate(-16vw, -18vw) };
+}

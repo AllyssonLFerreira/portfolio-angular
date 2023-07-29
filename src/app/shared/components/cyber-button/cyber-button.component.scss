@@ -1,0 +1,105 @@
+button {
+  font-family: var(--family);
+  max-width: 16.5rem;
+  min-width: 9.5rem;
+  position: relative;
+  display: grid;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.glitch-effect {
+  position: absolute;
+  color: var(--contrast);
+  background-color: var(--background-button);
+  border: 1px solid var(--primary);
+  padding: 0.6rem 0.81rem;
+  
+  &:hover,
+  &:focus {
+    .underline-decoration {
+      animation: blink 0.1s infinite;
+    }
+
+    .arrow-decoration {
+      animation: blink 0.1s infinite;
+    }
+
+    :before {
+      content: " ";
+      width: 0.93rem;
+      border: 1px solid var(--primary);
+      left: 50%;
+      position: absolute;
+      bottom: 2%;
+      transform: rotate(45deg)
+    }
+
+    :after {
+      content: " ";
+      width: 75%;
+      border: 1px solid var(--primary);
+      position: absolute;
+      left: 0;
+      bottom: 2%;
+      animation: shrink .5s 1 forwards;
+    }
+  }
+  
+  &:active {
+    background: var(--background);
+    color:var(--accent);
+    animation: color-glitch .1s ease-in-out;
+    .underline-decoration {
+      animation-name: none;
+    }
+    .arrow-decoration {
+      animation-name: none;
+    }
+    :before, :after {
+      display: none;
+    }
+  }
+}
+
+.underline-decoration,
+.arrow-decoration {
+  display: inline-block;
+}
+
+@keyframes color-glitch {
+  25% {
+    color: var(--primary);
+    transform: translateX(-10px);
+    letter-spacing: 10px;
+  }
+  35% {
+    color: var(--accent);
+    transform: translate(10px);
+  }
+  59% {
+    opacity: 0;
+  }
+  60% {
+    color: var(--primary);
+    transform: translate(-10px);
+    filter: blur(5px);
+  }
+  100% {
+    color: var(--accent);
+    blur: (5px);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes shrink {
+  100% {
+    width: 10%;
+  }
+}

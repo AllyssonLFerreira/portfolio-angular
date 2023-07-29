@@ -1,0 +1,12 @@
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between;
+}
+

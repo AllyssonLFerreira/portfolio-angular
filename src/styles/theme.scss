@@ -1,0 +1,32 @@
+.interference-theme {
+    content: '';
+    display: block;
+    position: fixed;
+    top: -4px;
+    left:-2px;
+    bottom: -4px;
+    right:-2px;
+    background-image: linear-gradient(
+      rgba(#181818, 0.2) 0px,
+      rgba(#181818, 0.0) 1px,
+      rgba(#181818, 0.5) 2px,
+      rgba(#181818, 0.1) 5px
+    );
+    background-size: 100% 5px;
+    animation: .1s interference steps(4) infinite;  
+    transform:translateZ(25vmin);
+    z-index: -1;
+}
+
+.box {
+    border: 1px solid var(--primary);
+    border-bottom-left-radius: var(--regular-dimension);
+    border-top-right-radius: var(--regular-dimension);
+    background-color: var(--background);
+}
+
+@keyframes interference {
+    to {
+      transform: translateY(-1em) translateZ(25vmin*1.02);
+    } 
+}

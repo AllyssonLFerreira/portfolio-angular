@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Share Tech Mono;
+    src: url('../assets/fonts/ShareTechMono-Regular.ttf') format('opentype');
+};
+
+:root {
+    //colors
+    --primary: #0016ee;
+    --accent: #6f00a4;
+    --background: #333333;
+    
+    --background-button: #0018ee1e;
+    --contrast: #EBEBEB;
+    --contrast-shadow: #DADADA; 
+
+    //typography 
+    --family: 'Share Tech Mono', monospace;
+    --body-size: 1rem;
+    --body-weight: 400;
+    --subtitle-size: 1.125rem;
+    --title-size: 2.25rem; 
+    --title-weight: 600;
+
+    //dimensions
+    --regular-dimension: 1rem;
+
+    .interference-theme {
+        --background: #181818;
+    }
+
+    .box {
+        --background: #0018ee11;
+    }
+
+    h2 {
+        --contrast-shadow: #b22ef0; 
+    }
+}
