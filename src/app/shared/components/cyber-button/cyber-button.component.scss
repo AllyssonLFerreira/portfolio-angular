@@ -1,7 +1,6 @@
 button {
+  min-width: 10.25rem;
   font-family: var(--family);
-  max-width: 16.5rem;
-  min-width: 9.5rem;
   position: relative;
   display: grid;
   border: none;
@@ -14,6 +13,7 @@ button {
   color: var(--contrast);
   background-color: var(--background-button);
   border: 1px solid var(--primary);
+  width: 100%;
   padding: 0.6rem 0.81rem;
   
   &:hover,
