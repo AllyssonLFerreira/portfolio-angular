@@ -12,27 +12,27 @@
         "img": "/assets/img/presentation.jpeg",
         "tr": [
           {
-            "description": "TARGET",
+            "description": "Target_Name",
             "value": "Allysson Lima Ferreira"
           },
           {
-            "description": "PROFESSION",
+            "description": "Target_Profession",
             "value": "Software Engineer"
           },
           {
-            "description": "LOCATION",
+            "description": "Target_Location",
             "value": "Brazil, RS"
           },
           {
-            "description": "AGE",
+            "description": "Target_Age",
             "value": "27"
           },
           {
-            "description": "SEX",
+            "description": "Target_Sex",
             "value": "Male"
           },
           {
-            "description": "CHILDREN",
+            "description": "Target_Affiliation",
             "value": "Two Cats"
           }
         ]
