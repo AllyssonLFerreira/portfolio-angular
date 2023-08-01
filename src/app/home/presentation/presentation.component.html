@@ -4,7 +4,7 @@
       <div class="box __terminal">
           <h2 class="caption">//target_ briefing_&rArr;</h2>
           <ng-container>
-              <p *ngFor="let data of content.presentation.textBox"> &rArr; {{data.text}} </p>
+              <p *ngFor="let data of content.presentation.textBox"> &rArr; {{data}} </p>
           </ng-container>
           <nav>
               <app-cyber-button text="Download _CV" 
@@ -14,15 +14,8 @@
         </div>
         
         <div class="frame terminal-box">
-          <app-info-card />
+              <app-info-card [rows]="content.presentation.data"/>   
         </div>
-      
-      <!-- <ng-container *ngFor="let table of content.presentation.table">
-        <div class="presentation-table">
-          <app-table  img="{{table.img}}"
-                      [tableData]="table.tr"/>
-        </div>
-      </ng-container> -->
       
       <app-cyber-button text="_SKILLS" 
                         routerLink="skills"

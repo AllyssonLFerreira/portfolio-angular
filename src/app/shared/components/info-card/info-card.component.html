@@ -1,16 +1,19 @@
 <ng-container>
-    <section class="info-card-container">
-
-        <div class="info-car-row">
-            <div class="card">
-                <span class="testing"></span>
-                <span class="polygon"></span>
-                <span class="testing-bottom-border"></span>
-            </div>
-            
-            <p>teste</p>
-            <p> testando </p>
+    <section class="box">
+        <div class="info-card-container">
+            <ng-container *ngFor="let row of rows">
+                <div class="info-card-row">
+                    <span class="square-marker"></span>
+                    <div>
+                        <span class="polygon"></span>
+                        <p class="info-card-details">{{row.description}}</p>
+                    </div>
+                    <div>
+                        <span class="polygon"></span>
+                        <p class="info-card-details">{{row.value}}</p>
+                    </div>
+                </div>
+            </ng-container>
         </div>
-
     </section>
 </ng-container>

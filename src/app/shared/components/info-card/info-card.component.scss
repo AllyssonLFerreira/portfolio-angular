@@ -1,48 +1,52 @@
 section {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     gap: 1rem;
 }
 
-section > div {
+.info-card-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.card {
+.info-card-row {
     position: relative;
     display: flex;
     gap: 1rem;
 }
 
-.testing {
+.info-card-row:hover {
+    .square-marker {
+        background-color: transparent;
+        border: 1px solid var(--primary);
+        transition: ease-in-out 0.6s;
+    }
+}
+
+.square-marker {
     width: 28px;
     height: 28px;
     background-color: var(--primary);
     cursor: pointer;
 }
 
-.testing:hover {
-    background-color: transparent;
-    border: 1px solid var(--primary);
-    transition: ease-in-out 0.6s;
-}
-
-.testing-bottom-border {
-    width: 64px;
-    height: 1px;
-    align-self: flex-end;
-    background-color: var(--primary);
-}
-
-.polygon::before {
-    content: "";
+/* .polygon {
     position: absolute;
     left: 48px;
     top: 0;
-    width: 1px;
+    width: 3px;
     height: 28px;
     background-color: var(--primary);
     transform: skewX(40deg);
+} */
+
+.info-card-details {
+    padding: 0 0 6px 10px;
+    border-bottom: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    /* box-shadow: -6px 2px 1px 0px var(--accent), 
+                -6px 2px 14px -6px white; */
 }

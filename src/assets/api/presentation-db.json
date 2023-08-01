@@ -6,11 +6,7 @@
       {"text": "Your target has worked on a wide range of projects, both large and small, using technologies such as Java, Node.js, Typescript, Angular, and React."},
       {"text": "Interested in all stages of software development, he also has a strong passion for gaming, dedicating a significant portion of his personal studies to this field."}
     ],
-    "table": [
-      {
-        "title": "target data",
-        "img": "/assets/img/presentation.jpeg",
-        "tr": [
+    "data": [
           {
             "description": "Target_Name",
             "value": "Allysson Lima Ferreira"
@@ -35,8 +31,6 @@
             "description": "Target_Affiliation",
             "value": "Two Cats"
           }
-        ]
-      }
-    ]
+        ]   
   }
 }
