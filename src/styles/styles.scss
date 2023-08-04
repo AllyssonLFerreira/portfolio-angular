@@ -1,7 +1,6 @@
 @import './common.scss';
 @import './root.scss';
 @import './theme.scss';
-@import 'animations/retrowave.scss';
 @import 'animations/glitch.scss';
 @import 'animations/commons.scss';
 
@@ -10,13 +9,13 @@
     padding: 0;
     margin: 0;
 }
-  
+
 html, body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -font-smoothing: antialiased;
 }
-  
+
 body {
     width: 100vw;
     height: 100vh;
@@ -28,7 +27,7 @@ body {
     font-weight: var(--body-weight);
 }
 
-a, i { 
+a, i {
     cursor: pointer
 };
 
@@ -36,10 +35,6 @@ h2 {
     text-shadow: 0 0 5px var(--contrast-shadow);
     font-size: var(--title-size);
     font-weight: var(--title-weight);
-}
-
-.title {
-    text-shadow: 0 0 5px var(--contrast-shadow);
 }
 
 @supports (will-change: transform) {
@@ -53,4 +48,3 @@ h2 {
         animation-fill-mode: forwards;
       }
 }
-  

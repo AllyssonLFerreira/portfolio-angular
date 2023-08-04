@@ -1,4 +1,4 @@
-/* .scanline{
+.scanline{
     position: fixed;
     display: flex;
     top: 0;
@@ -7,14 +7,14 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-} */
+}
 
 //typewritter effect container //
 .typewriter {
     display: flex;
     flex-direction: column;
 }
-  
+
 .typewriter::after {
     position: relative;
     display: inline-block;
@@ -23,18 +23,18 @@
     height: .85em;
     animation: text-blink 1.25s infinite;
 }
-  
+
 @media (min-width: 355px) and (max-width: 767px) {
 
     /* body {
         padding: 4rem 0.5rem 2rem 2rem;
     } */
 
-    .box {
+    /* .box {
         position: fixed;
         padding: 1rem 1.25rem;
         overflow-y: auto;
-    }
+    } */
 }
 
 .caption { text-transform: uppercase };

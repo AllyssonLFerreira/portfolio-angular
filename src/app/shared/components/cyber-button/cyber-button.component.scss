@@ -2,10 +2,13 @@ button {
   min-width: 10.25rem;
   font-family: var(--family);
   position: relative;
-  display: grid;
   border: none;
   background: transparent;
   cursor: pointer;
+
+  display: flex; // Alterando para Flexbox
+  justify-content: center; // Centralizando o conteúdo horizontalmente
+  align-items: center; // Centralizando o conteúdo verticalmente
 }
 
 .glitch-effect {
@@ -26,17 +29,17 @@ button {
       animation: blink 0.1s infinite;
     }
 
-    :before {
+    &:before {
       content: " ";
       width: 0.93rem;
       border: 1px solid var(--primary);
       left: 50%;
       position: absolute;
       bottom: 2%;
-      transform: rotate(45deg)
+      transform: rotate(45deg);
     }
 
-    :after {
+    &:after {
       content: " ";
       width: 75%;
       border: 1px solid var(--primary);
@@ -49,7 +52,7 @@ button {
   
   &:active {
     background: var(--background);
-    color:var(--accent);
+    color: var(--accent);
     animation: color-glitch .1s ease-in-out;
     .underline-decoration {
       animation-name: none;
@@ -57,7 +60,7 @@ button {
     .arrow-decoration {
       animation-name: none;
     }
-    :before, :after {
+    &:before, &:after {
       display: none;
     }
   }
@@ -88,7 +91,7 @@ button {
   }
   100% {
     color: var(--accent);
-    blur: (5px);
+    blur: 5px;
   }
 }
 

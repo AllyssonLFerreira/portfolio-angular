@@ -1,16 +1,18 @@
 <ng-container>
-    <section class="box">
+    <section>
+      <h2 class="caption"> //About_ Target_&rArr;</h2>
         <div class="info-card-container">
             <ng-container *ngFor="let row of rows">
                 <div class="info-card-row">
                     <span class="square-marker"></span>
                     <div>
                         <span class="polygon"></span>
-                        <p class="info-card-details">{{row.description}}</p>
+                        <p class="info-card-description"> // {{row.description}}</p>
                     </div>
+                    <span class="info-card-arrow">&rArr;</span>
                     <div>
                         <span class="polygon"></span>
-                        <p class="info-card-details">{{row.value}}</p>
+                        <p class="info-card-value">_{{row.value}};</p>
                     </div>
                 </div>
             </ng-container>

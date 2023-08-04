@@ -6,29 +6,33 @@
       {"text": "Your target has worked on a wide range of projects, both large and small, using technologies such as Java, Node.js, Typescript, Angular, and React."},
       {"text": "Interested in all stages of software development, he also has a strong passion for gaming, dedicating a significant portion of his personal studies to this field."}
     ],
+    "image": {
+      "alt": "Allysson_Image",
+      "src": "/assets/images/target_back.jpeg"
+    },
     "data": [
           {
-            "description": "Target_Name",
+            "description": "_Name",
             "value": "Allysson Lima Ferreira"
           },
           {
-            "description": "Target_Profession",
+            "description": "_Profession",
             "value": "Software Engineer"
           },
           {
-            "description": "Target_Location",
+            "description": "_Location",
             "value": "Brazil, RS"
           },
           {
-            "description": "Target_Age",
+            "description": "_Age",
             "value": "27"
           },
           {
-            "description": "Target_Sex",
+            "description": "_Sex",
             "value": "Male"
           },
           {
-            "description": "Target_Affiliation",
+            "description": "_Affiliation",
             "value": "Two Cats"
           }
         ]   

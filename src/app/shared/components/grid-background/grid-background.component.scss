@@ -39,7 +39,7 @@ $scene-scale: 4;
   background: linear-gradient(
       180deg,
       rgba(#333333, 0.5) 45%,
-      rgba(#6f00a4, 0.4) 52%,
+      rgba(#cc2525, 0.2) 52%,
       rgba(#333333, 0.5) 65%
   );
 }
@@ -70,7 +70,7 @@ $scene-scale: 4;
 .scene__grid-x {
   background-image: linear-gradient(
       to left,
-      rgba(#0016ee, 0.6) 1px,
+      rgba(#cc2525, 0.6) 1px,
       transparent 1px
   );
 }
@@ -78,7 +78,7 @@ $scene-scale: 4;
 .scene__grid-y {
   background-image: linear-gradient(
       to top,
-      rgba(#0016ee, 0.6) 1px,
+      rgba(#cc2525, 0.6) 1px,
       transparent 1px
   );
 }
@@ -111,5 +111,15 @@ $scene-scale: 4;
 
   100% {
     perspective-origin: 50% 50%;
+  }
+}
+
+@keyframes grid-y {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

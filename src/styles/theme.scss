@@ -23,6 +23,14 @@
     border-bottom-left-radius: var(--regular-dimension);
     border-top-right-radius: var(--regular-dimension);
     background-color: var(--background);
+    height: 100%;
+    padding: var(--regular-padding);
+}
+
+@media (min-width: 356px) and (max-width: 1024px){
+  .box {
+    padding: var(--mobile-regular-padding);
+  }
 }
 
 @keyframes interference {

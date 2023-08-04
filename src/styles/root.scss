@@ -7,32 +7,31 @@
     //colors
     --primary: #0016ee;
     --accent: #6f00a4;
+    --warn: #cc2525;
     --background: #333333;
-    
+    --reboting-background: rgba(204, 37, 37, 0.16);
     --background-button: #0018ee1e;
     --contrast: #EBEBEB;
-    --contrast-shadow: #DADADA; 
+    --contrast-shadow: #DADADA;
 
-    //typography 
+    //typography
     --family: 'Share Tech Mono', monospace;
     --body-size: 1rem;
     --body-weight: 400;
     --subtitle-size: 1.125rem;
-    --title-size: 2.25rem; 
+    --title-size: 2.25rem;
     --title-weight: 600;
 
     //dimensions
     --regular-dimension: 1rem;
+    --regular-padding: 4rem;
+    --mobile-regular-padding: 1.5rem;
 
     .interference-theme {
         --background: #181818;
     }
 
     .box {
-        --background: #0018ee11;
-    }
-
-    h2 {
-        --contrast-shadow: #b22ef0; 
+        --background: #0018EE1D;
     }
 }

@@ -1,15 +1,24 @@
-section { 
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--regular-dimension);
+section {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--regular-dimension);
 }
 
-section > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5rem;
-  gap: var(--regular-dimension);
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0 0 0; 
+}
+
+.briefing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--regular-dimension);
 }
 
 .presentation-table {
@@ -17,43 +26,31 @@ section > div {
     max-height: 29.25rem;
     margin-bottom: 2rem;
 }
-  
-nav {
+
+.target-details {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    margin: 0 0.5rem;
-      
+    gap: var(--regular-padding);
+    align-items: center;
+
 }
-  
-  @media (min-width: 706px) and (max-width: 857px) {
-    section {
-      width: 90%;
-      left: 5%;
-      max-height: 65%;
-    }
+ .bottom-align {
+    position: absolute;
+    right: var(--regular-padding);
+    bottom: var(--regular-padding);
+ }
+
+@media (min-width: 356px) and (max-width: 1024px) {
+  .target-details {
+    flex-direction: column;
+    margin: 1rem 0;
+    padding-bottom: 2rem;
   }
-  @media (min-width: 355px) and (max-width: 705px) {
-    section {
-      width: 90%;
-      max-height: 75vh;
-      position: fixed;
-      top: 5%;
-      left: 5%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  
-      .text-section {
-        max-width: 90%;
-      }
-      .typewriter {
-        max-height: 36rem;
-      }
-      .presentation-table {
-        align-self: end;
-        max-width: 18rem;
-        max-height: 29.25rem;
-      }
-    }
+
+  .bottom-align {
+    position: inherit;
+    bottom: 0;
+    right: 3.2rem;
   }
   
+}
