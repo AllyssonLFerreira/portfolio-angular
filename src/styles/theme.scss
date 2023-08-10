@@ -13,15 +13,17 @@
       rgba(#181818, 0.1) 5px
     );
     background-size: 100% 5px;
-    animation: .1s interference steps(4) infinite;  
+    animation: .1s interference steps(4) infinite;
     transform:translateZ(25vmin);
     z-index: -1;
 }
 
 .box {
+    position: relative;
+    bottom: var(--regular-gap);
     border: 1px solid var(--primary);
-    border-bottom-left-radius: var(--regular-dimension);
-    border-top-right-radius: var(--regular-dimension);
+    border-bottom-left-radius: var(--regular-gap);
+    border-top-right-radius: var(--regular-gap);
     background-color: var(--background);
     height: 100%;
     padding: var(--regular-padding);
@@ -36,5 +38,5 @@
 @keyframes interference {
     to {
       transform: translateY(-1em) translateZ(25vmin*1.02);
-    } 
+    }
 }

@@ -58,3 +58,9 @@
     left: 1%;
     top: 2%;
 }
+
+@media (min-width: 356px) and (max-width: 536px) {
+  .fixed-left {
+    position: relative;
+  }
+}

@@ -25,7 +25,8 @@ export class PresentationStore extends ComponentStore<PresentationState>{
     return content$.pipe(
       switchMap(() => this._SERVICE.fetch().pipe(
         tapResponse((state) => {
-            this._FLOW.setContent(state)
+            this._FLOW.setContent(state),
+            console.log(state)
           },
           (error: HttpErrorResponse) => console.error('erro =>', error))
       ))

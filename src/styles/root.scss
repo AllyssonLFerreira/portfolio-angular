@@ -9,10 +9,8 @@
     --accent: #6f00a4;
     --warn: #cc2525;
     --background: #333333;
-    --reboting-background: rgba(204, 37, 37, 0.16);
-    --background-button: #0018ee1e;
     --contrast: #EBEBEB;
-    --contrast-shadow: #DADADA;
+    --contrast-shadow: #d1d1d1;
 
     //typography
     --family: 'Share Tech Mono', monospace;
@@ -23,15 +21,22 @@
     --title-weight: 600;
 
     //dimensions
-    --regular-dimension: 1rem;
+    --regular-gap: 1rem;
+    --large-gap: 2.5rem;
     --regular-padding: 4rem;
+    --small-padding: 2rem;
     --mobile-regular-padding: 1.5rem;
 
-    .interference-theme {
+    .interference-theme,
+    .see-more {
         --background: #181818;
     }
 
     .box {
         --background: #0018EE1D;
+    }
+
+    .glitch-effect {
+        --background: #0018ee1e;
     }
 }

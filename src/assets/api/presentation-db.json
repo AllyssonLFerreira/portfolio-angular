@@ -10,6 +10,9 @@
       "alt": "Allysson_Image",
       "src": "/assets/images/target_back.jpeg"
     },
+    "dataTitle": {
+      "value": "</>About /Target"
+    },
     "data": [
           {
             "description": "_Name",
@@ -35,6 +38,6 @@
             "description": "_Affiliation",
             "value": "Two Cats"
           }
-        ]   
+    ]   
   }
 }

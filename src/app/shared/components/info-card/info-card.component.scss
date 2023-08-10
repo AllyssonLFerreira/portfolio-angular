@@ -4,11 +4,15 @@ section {
     gap: 2rem;
 }
 
+ul > span {
+  width: 100%;
+}
+
 .info-card-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--regular-dimension);
+    gap: var(--regular-gap);
 }
 
 .info-card-row {
@@ -45,7 +49,7 @@ section {
 }
 
 .info-card-row:hover {
-  .info-card-arrow {
+  .info-card-glitch {
     animation: blink 0.1s infinite;
   }
 }
@@ -54,4 +58,43 @@ section {
     .square-marker {
         display: none;
     }
+}
+
+.info-card-bar {
+  width: 100%;
+}
+
+.info-card-bar > div {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+progress {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 10px #2187e7b3;
+  border-bottom-left-radius: var(--regular-gap);
+  border-top-right-radius: var(--regular-gap)
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(0,0,0,0.3);
+  border-bottom-left-radius: var(--regular-gap);
+  border-top-right-radius: var(--regular-gap)
+}
+
+progress[value]::-webkit-progress-value {
+  background: #0781f4;
+  border-bottom-left-radius: var(--regular-gap);
+  border-top-right-radius: var(--regular-gap)
+}
+
+progress::-moz-progress-bar {
+  background: #0781f4;
+  border-bottom-left-radius: var(--regular-gap);
+  border-top-right-radius: var(--regular-gap)
 }

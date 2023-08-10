@@ -14,7 +14,7 @@ import { PhotoCardComponent } from './components/photo-card/photo-card.component
     GridBackgroundComponent,
     ScannerComponent,
     InfoCardComponent,
-    PhotoCardComponent
+    PhotoCardComponent,
   ],
   imports: [
     CommonModule
@@ -25,7 +25,7 @@ import { PhotoCardComponent } from './components/photo-card/photo-card.component
     GridBackgroundComponent,
     ScannerComponent,
     InfoCardComponent,
-    PhotoCardComponent
+    PhotoCardComponent,
   ],
   providers: []
 })

@@ -7,8 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InfoCardComponent {
 
-  @Input() description!: string[];
-  @Input() value!: string[];
-
-  @Input() rows!:{ description: string; value: any }[];
+  @Input() title!: string;
+  @Input() simpleRows!:{ description: string; value: any }[];
+  @Input() rowWithProgress!: { description: string; value: number}[];
 }

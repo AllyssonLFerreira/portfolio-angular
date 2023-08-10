@@ -2,7 +2,7 @@
     <section class="frame">
 
         <div class="box briefing">
-          <h2 class="caption">//target_ briefing_&rArr;</h2>
+          <h2 class="caption"> &lt;/&gt;target /briefing_&rArr;</h2>
           <ng-container>
               <p *ngFor="let data of content.presentation.textBox"> &rArr; {{data.text}} </p>
           </ng-container>
@@ -15,9 +15,9 @@
             <app-photo-card class="frame"alt="{{content.presentation.image.alt}}" 
                                     image="{{content.presentation.image.src}}"
             />
-            <app-info-card class="frame" [rows]="content.presentation.data"/>
+            <app-info-card class="frame" [simpleRows]="content.presentation.data" [title]="content.presentation.dataTitle.value"/>
             
-            <app-cyber-button class="bottom-align" text="_SKILLS" routerLink="skills" />
+            <app-cyber-button class="bottom-align" text="_SKILLS" path="secret/skills" />
             
         </div>
 

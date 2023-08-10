@@ -5,7 +5,7 @@ section {
     right: 8%;
     display: flex;
     flex-direction: column;
-    gap: var(--regular-dimension);
+    gap: var(--regular-gap);
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--regular-dimension);
+    gap: var(--regular-gap);
 }
 
 .presentation-table {

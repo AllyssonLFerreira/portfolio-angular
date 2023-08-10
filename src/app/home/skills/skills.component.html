@@ -1,0 +1,32 @@
+<ng-container *ngIf="state$ | async as content">
+    <section class="frame">
+        <div class="box">
+            <h2 class="caption"> &lt;/&gt;target /skills_&rArr;</h2>
+            <ng-container *ngFor="let textBox of content.skills.textBox">
+                <p>
+                    <span>&rArr;</span>
+                    {{textBox.text}}
+                </p>
+            </ng-container>
+            <nav>
+              <app-cyber-button text="return" path="secret/presentation"/>
+              <app-cyber-button text="works" path="works"/>
+            </nav>
+        </div>
+        <div class="box frame">
+            <ng-container *ngFor="let dataContent of content.skills.content.slice(0, showMore)">
+                <app-info-card class="fade-in" [ngClass]="{'active': showMore >= 0}"
+                               [rowWithProgress]="dataContent.data"
+                               [title]="dataContent.dataTitle.value"/>
+            </ng-container>
+            <div class="see-more"
+                 *ngIf="showMore < content.skills.content.length"
+                 (click)="loadMore()">
+                <app-cyber-button text="See _Everything"/>
+            </div>
+        </div>
+    </section>
+
+</ng-container>
+
+

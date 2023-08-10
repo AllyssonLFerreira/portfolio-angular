@@ -1,5 +1,6 @@
-<ng-container>
-    <div class="interference-theme"></div>
+<span id="scrollbar" [ngStyle]="{width: scrollBar}"></span>
+<ng-container (scroll)="onScroll($event)">
+    <span class="interference-theme"></span>
     <app-spinner class="fixed-left"/>
     <router-outlet />
 </ng-container>

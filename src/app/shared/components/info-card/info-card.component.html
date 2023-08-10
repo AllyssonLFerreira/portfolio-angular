@@ -1,21 +1,40 @@
-<ng-container>
+<ng-container *ngIf="!!simpleRows else withProgress">
     <section>
-      <h2 class="caption"> //About_ Target_&rArr;</h2>
+      <h2 class="caption"> {{title}}&rArr;</h2>
         <div class="info-card-container">
-            <ng-container *ngFor="let row of rows">
+            <ng-container *ngFor="let row of simpleRows">
                 <div class="info-card-row">
                     <span class="square-marker"></span>
-                    <div>
-                        <span class="polygon"></span>
+                    <ul>
                         <p class="info-card-description"> // {{row.description}}</p>
-                    </div>
-                    <span class="info-card-arrow">&rArr;</span>
-                    <div>
-                        <span class="polygon"></span>
+                    </ul>
+                    <span class="info-card-glitch">&rArr;</span>
+                    <ul>
                         <p class="info-card-value">_{{row.value}};</p>
-                    </div>
+                    </ul>
                 </div>
             </ng-container>
         </div>
     </section>
 </ng-container>
+
+<ng-template #withProgress>
+    <section>
+        <h2 class="caption"> {{title}}&rArr;</h2>
+          <div class="info-card-container">
+              <ng-container *ngFor="let row of rowWithProgress">
+                  <div class="info-card-row">
+                      <span class="square-marker"></span>
+                      <div class="info-card-bar">
+                            <div class="info-card-glitch">
+                              <span> // {{row.description}} </span>
+                              <span> {{row.value}}% </span>
+                            </div>
+                            <progress max="100" value="{{row.value}}"></progress>
+                      </div>
+                  </div>
+              </ng-container>
+          </div>
+      </section>
+</ng-template>
+

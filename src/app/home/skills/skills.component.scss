@@ -1,0 +1,80 @@
+section {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--regular-gap);
+    position: absolute;
+    top: 10%;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    min-width: 35%;
+    gap: var(--large-gap);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div > p {
+    display: flex;
+    align-items: center;
+    gap: var(--regular-gap);
+}
+
+p > span {
+    position: relative;
+    bottom: 0.250rem;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), var(--background));
+    border-bottom-left-radius: var(--regular-gap);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+@media (min-width: 356px) and (max-width: 1366px) {
+  section > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    min-width: inherit;
+    margin: var(--regular-padding);
+  }
+}
+
+@media (min-width: 356px) and (max-width: 536px) {
+  section > div {
+    margin: var(--regular-gap);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--regular-gap);
+  }
+}

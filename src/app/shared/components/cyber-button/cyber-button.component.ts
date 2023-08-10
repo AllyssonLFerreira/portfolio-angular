@@ -10,7 +10,7 @@ export class CyberButtonComponent {
 
   //estender para diretiva se necessario //
     @Input() text!: string;
-    @Input() path: any;
+    @Input() path!: string;
 
     constructor(private _router: Router) { }
 

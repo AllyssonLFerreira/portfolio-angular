@@ -1,19 +1,22 @@
+import { TextBox, DataTitle, Data, Image } from "./common.interface"
+
 export interface Flow {
-  presentation: Options
-  skills: Options
+  presentation: PresentationContent
+  skills: SkillsContent
 }
 
-export interface Options {
-  textBox : { 
-      text: string;
-    }[],
-  image: {
-    alt: string;
-    src: string;
-  },
-  data:  { 
-    description: string;
-    value: string;
-  }[]
-  
+export interface PresentationContent {
+  textBox : TextBox[],
+  image: Image,
+  dataTitle: DataTitle
+  data:  Data[]
 }
+
+export interface SkillsContent {
+  textBox : TextBox[],
+  content: {
+    dataTitle: DataTitle
+    data:  Data[]
+  }[]
+}
+

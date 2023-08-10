@@ -3,6 +3,7 @@
 @import './theme.scss';
 @import 'animations/glitch.scss';
 @import 'animations/commons.scss';
+@import 'scrollbar.scss';
 
 *{
     box-sizing: border-box;
@@ -10,7 +11,7 @@
     margin: 0;
 }
 
-html, body {
+html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -font-smoothing: antialiased;
@@ -19,6 +20,7 @@ html, body {
 body {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     background-color: var(--background);
     color: var(--contrast);
     text-shadow: 0 0 5px var(--contrast-shadow);

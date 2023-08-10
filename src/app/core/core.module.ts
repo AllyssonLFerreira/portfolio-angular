@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from "@angular/common/http";
 import { FlowStore } from './store/flow.store';
 import { PresentationStore } from './store/presentation.store';
+import { SkillsStore } from './store/skills.store';
 
 @NgModule({
   imports: [
@@ -9,7 +10,8 @@ import { PresentationStore } from './store/presentation.store';
   ],
   providers: [
     FlowStore,
-    PresentationStore
+    PresentationStore,
+    SkillsStore
   ]
 })
 export class CoreModule { }

@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#scrollbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.125rem;
+  z-index: 999;
+  background-color: var(--primary);
+  box-shadow: 0 0 5px var(--contrast-shadow);
+  transition: width 0.4s ease-in-out;
+}
